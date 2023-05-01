@@ -1,0 +1,138 @@
+.contact {
+  margin-bottom: 64px;
+  padding-top: 118px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $vp-1024) {
+    display: grid;
+    grid-template-columns: calc(50% - 10px) 1fr;
+    padding-top: 142px;
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+}
+
+.contact__text {
+  text-align: center;
+  margin-bottom: 34px;
+
+  @media (min-width: $vp-768) {
+    text-align: left;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-left: 93px;
+  }
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+  margin-left: -2px;
+
+  @media (min-width: $vp-768) {
+    gap: 12px;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-left: 93px;
+  }
+}
+
+.contact__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    color: #7BDB0A;
+
+    &>.contact__icon {
+      background-color: #7BDB0A;
+    }
+  }
+
+  &:active {
+    color: #0F805D;
+
+    &>.contact__icon {
+      background-color: #0F805D;
+    }
+  }
+}
+
+.contact__icon {
+  background-color: #000000;
+  height: 32px;
+  width: 32px;
+
+  &--address {
+    mask: url(/../img/icons/stack.svg#contact-address);
+    margin-top: -2px;
+  }
+
+  &--phone {
+    mask: url(/../img/icons/stack.svg#contact-phone);
+  }
+
+  &--email {
+    mask: url(/../img/icons/stack.svg#contact-email);
+    margin-top: 2px;
+
+    @media (min-width: $vp-768) {
+      margin-top: 0;
+    }
+  }
+}
+
+.contact__map {
+  position: relative;
+  height: 372px;
+  width: 100%;
+  background-color: #F1F6FC;
+  border-radius: 40px;
+
+  @media (min-width: $vp-1024) {
+    order: -1;
+  }
+}
+
+.contact__map-image {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.contact__map-frame {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.contact__title {
+  @media (min-width: $vp-1024) {
+    margin-top: 25px;
+    margin-bottom: 49px;
+  }
+}

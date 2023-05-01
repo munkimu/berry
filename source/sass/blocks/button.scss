@@ -1,0 +1,38 @@
+.button {
+  background: #6A107A;
+  border-radius: 40px;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 16px 20px 16px 16px;
+  color: #FBFCFE;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  filter: drop-shadow(0 4px 4px transparentize(#580d65, 0.75));
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-family: $ff-raleway;
+  letter-spacing: 0.05em;
+
+  &:hover {
+    background: #B22EC8;
+  }
+
+  &:active {
+    background: transparentize(#6A107A, 0.4);
+  }
+
+  &--small {
+    padding: 14px 14px 14px 14px;
+  }
+
+  &--big {
+
+    @media (min-width: $vp-768) {
+      font-size: 28px;
+      line-height: 33px;
+      padding: 18px 105px 18px 105px;
+    }
+  }
+}

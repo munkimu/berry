@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ягоды с доставкой. Оформить заказ</title>
+
+<!--  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="img/logo-mobile.svg" as="image">
+  <link rel="preload" href="img/content/slogan-background-mobile@2x.jpg" as="image">
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="page__body">
+
+  <header class="header">
+    <nav class="navigation navigation--no-js">
+      <a class="navigation__logo-link" href="/">
+        <img class="navigation__logo" src="img/logo.svg" width="52" height="52" alt="Логотип Ягода.">
+      </a>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="/">Каталог</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="/#news">Новости</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#contact">Контакты</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#form">Заказать</a>
+        </li>
+      </ul>
+      <button class="navigation__toggle" type="button" aria-label="Открыть или закрыть меню сайта."></button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="intro-form">
+      <h1 class="intro-form__title">Закажи ягоды</h1>
+      <p>Мы&nbsp;соберем для вас ягоды и&nbsp;доставим их&nbsp;в&nbsp;удобном для вас виде&nbsp;&mdash; свежими или замороженными</p>
+    </section>
+
+    <section class="form container">
+      <form method="POST" action="https://echo.htmlacademy.ru">
+        <h2 class="visually-hidden">Форма заказа.</h2>
+        <fieldset class="form__block">
+          <legend class="form__title">
+            <h3 class="form__title">Выберите ягоды</h3>
+          </legend>
+          <ul class="form__checkbox-list">
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="berry" value="cowberry">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">брусника</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="berry" value="gooseberry">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">крыжовник</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="berry" value="cherry">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">вишня</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="berry" value="raspberries">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">малина</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="berry" value="blueberry">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">голубика</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="berry" value="cloudberry">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">морошка</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="berry" value="blackberry">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">ежевика</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="berry" value="blueberry">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">черника</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="berry" value="strawberry" disabled>
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">клубника</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="berry" value="cranberry" disabled>
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">клюква</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__block">
+          <legend>
+            <h3 class="form__title">Вид хранения</h3>
+          </legend>
+          <ul class="form__checkbox-list">
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="storage" value="fresh">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">свежие ягоды</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="storage" value="frozen">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">замороженные ягоды</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__checkbox">
+                <input class="form__checkbox-value visually-hidden" type="checkbox" name="storage" value="mix">
+                <span class="form__checkbox-element"></span>
+                <span class="form__text">ягодные миксы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__block">
+          <legend>
+            <h3 class="form__title">Способ доставки</h3>
+          </legend>
+          <ul class="form__radio-list">
+            <li>
+              <label class="form__radio">
+                <input class="form__radio-value visually-hidden" type="radio" name="delivery" value="courier">
+                <span class="form__radio-element"></span>
+                <span class="form__text">Доставка (по&nbsp;СПБ в&nbsp;пределах КАД)</span>
+              </label>
+            </li>
+            <li>
+              <label class="form__radio">
+                <input class="form__radio-value visually-hidden" type="radio" name="delivery" value="pickup">
+                <span class="form__radio-element"></span>
+                <span class="form__text">Самовывоз (Набережная Обводного канала, 101)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__block">
+          <legend class="form__title">
+            <h3 class="form__title">Ваши контакты</h3>
+          </legend>
+          <ul class="form__placeholder-list">
+            <li>
+              <label class="form__placeholder">
+                <span class="form__text-placeholder">Имя *</span>
+                <input class="form__placeholder-value" type="text" name="name" placeholder="Как к вам обращаться?" required>
+              </label>
+            </li>
+            <li>
+              <label class="form__placeholder">
+                <span class="form__text-placeholder">Телефон *</span>
+                <input class="form__placeholder-value" type="text" name="phone" placeholder="+7 ххх ххх хх хх" required>
+              </label>
+            </li>
+            <li>
+              <label class="form__placeholder">
+                <span class="form__text-placeholder">Email *</span>
+                <input class="form__placeholder-value" type="text" name="email" placeholder="Ваш email" required>
+              </label>
+            </li>
+            <li>
+              <label class="form__placeholder">
+                <span class="form__text-placeholder">Адрес *</span>
+                <textarea class="form__textarea-value" name="address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
+              </label>
+            </li>
+            <li>
+              <label class="form__placeholder">
+                <span class="form__text-placeholder">Пожелания к&nbsp;заказу</span>
+                <textarea class="form__textarea-value" name="message" placeholder="Чем мы можем вам помочь?"></textarea>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="form__submit">
+          <button class="form__submit-button button" type="submit">Заказать</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="contact container">
+      <a name="contact"></a>
+      <h2 class="contact__title title">Где забрать ягоды?</h3>
+      <p>Забери ягоды с нашего склада по адресу:</p>
+      <address class="contact__list">
+        <span class="contact__item">Набережная Обводного канала, 101</span>
+        <span class="contact__item"><a  class="contact__link" href="phone:+79105244118">+ 7 910 524 41 18</a></span>
+        <span class="contact__item"><a  class="contact__link" href="mailto:info@yagoda.ru">info@yagoda.ru</a></span>
+      </address>
+      <div class="contact__map">
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/map-desktop.webp 1x, img/content/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet.webp 1x, img/content/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/content/map-mobile.webp 1x, img/content/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1024px)" srcset="img/content/map-desktop.jpg 1x, img/content/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/content/map-tablet.jpg 1x, img/content/map-tablet@2x.jpg 2x">
+          <img class="contact__map-image" src="img/content/map-mobile.jpg" srcset="img/content/map-mobile@2x.jpg 2x" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8." width="320" height="362">
+        </picture>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer__logo" href="#">
+      <span class="visually-hidden">Логотип Ягода.</span>
+      <svg width="52" height="52">
+        <use href="img/logo.svg"></use>
+      </svg>
+    </a>
+    <ul class="footer__social">
+      <li class="footer__social-item">
+        <a href="https://www.youtube.com/" target="_blank">
+          <span class="visually-hidden">Мы в Телеграм.</span>
+          <svg class="footer__social-icon" width="32" height="32">
+            <use href="img/icons/stack.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="https://www.youtube.com/" target="_blank">
+          <span class="visually-hidden">Мы в Вконтакте.</span>
+          <svg class="footer__social-icon" width="32" height="32">
+            <use href="img/icons/stack.svg#vkontakte"></use>
+          </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="https://www.youtube.com/" target="_blank">
+            <span class="visually-hidden">Мы в Ютуб.</span>
+            <svg class="footer__social-icon" width="32" height="32">
+              <use href="img/icons/stack.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <div class="footer__copyright-text">HTML Academy</div>
+        <svg class="footer__copyright-logo" height="24" width="20">
+          <use href="img/icons/stack.svg#htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

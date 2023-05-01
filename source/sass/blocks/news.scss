@@ -1,0 +1,122 @@
+.news {
+  margin-bottom: 66px;
+  padding-top: 97px;
+
+  @media (min-width: $vp-768) and (max-width: ($vp-1024 - 1px)) {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-top: 116px;
+    margin-bottom: 110px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding-top: 142px;
+    margin-bottom: 99px;
+  }
+}
+
+.news__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 38px 24px;
+    justify-content: center;
+  }
+
+  @media (min-width: $vp-1024) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 38px 2%;
+  }
+}
+
+.news__item {
+  background: #FBFCFE;
+  outline: 2px solid #0F805D;
+  border-radius: 38px;
+  padding: 30px 18px 70px 18px;
+  min-height: 396px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: transparentize(#8e9892, 0.3);
+    mask: url(/../img/icons/stack.svg#line-berry);
+    width: 100%;
+    height: 32px;
+    left: 0;
+    bottom: 22px;
+
+    @media (min-width: $vp-768) {
+      height: 40px;
+      bottom: 40px;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    width: calc((100% - 24px) / 2);
+    padding: 30px 34px 103px 34px;
+    min-height: 490px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: auto;
+    padding: 30px 36px 107px 36px;
+  }
+
+  &--left {
+    @media (min-width: $vp-768) and (max-width: ($vp-1024 - 1px)) {
+      margin-left: -10px;
+    }
+  }
+}
+
+.news__item-title {
+  margin-bottom: 20px;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $vp-768) {
+    min-height: 100px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 21px;
+  }
+}
+
+.news__item-date {
+  text-align: right;
+  display: block;
+  margin-top: auto;
+}
+
+.news__title {
+  margin-bottom: 66px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 100px;
+  }
+}
+
+.news__item-text {
+  margin-bottom: 30px;
+}

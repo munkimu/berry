@@ -1,0 +1,33 @@
+.decoration {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: transparentize(#8e9892, 0.3);
+    mask: url(/../img/icons/stack.svg#line-leaf);
+    height: 32px;
+    width: 100%;
+    left: 0;
+    margin: -97px auto 0 auto;
+
+    @media (min-width: $vp-768) {
+      height: 42px;
+      margin-top: -116px;
+    }
+
+    @media (min-width: $vp-1024) {
+      margin-top: -142px;
+    }
+  }
+
+  &--contact {
+    &::before {
+      margin-top: -118px;
+
+      @media (min-width: $vp-1024) {
+        margin-top: 0;
+      }
+    }
+  }
+}

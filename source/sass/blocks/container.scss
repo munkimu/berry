@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  min-width: $vp-320;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-left: $distance-28;
+  padding-right: $distance-28;
+
+  &--contact {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-left: $distance-94;
+    padding-right: $distance-94;
+
+    &--contact-text {
+      padding-left: $distance-94 + 86px;
+      padding-right: $distance-94 + 86px;
+    }
+  }
+
+  @media (min-width: $vp-1024) {
+    padding-left: $distance-10-8per;
+    padding-right: $distance-10-8per;
+
+    &--contact-text {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--contact {
+      padding-left: $distance-10-8per;
+      padding-right: $distance-10-8per;
+    }
+  }
+}

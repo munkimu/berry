@@ -1,0 +1,43 @@
+.logo {
+  color: #0F805D;
+  width: 52px;
+  height: 52px;
+  display: block;
+  display: inline-block;
+
+  @media (min-width: $vp-768) {
+    height: 58px;
+    width: auto;
+    display: flex;
+    gap: 9px;
+  }
+
+  &--link {
+    &:hover {
+      color: #7BDB0A;
+    }
+
+    &:active {
+      color: transparentize(#0F805D, 0.5);
+    }
+  }
+}
+
+.logo__image {
+  width: 52px;
+  height: 52px;
+
+  @media (min-width: $vp-768) {
+    width: 58px;
+    height: 60px;
+  }
+}
+
+.logo__text {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: inline-block;
+    margin-top: 14px;
+  }
+}
