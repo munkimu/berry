@@ -16,9 +16,25 @@
     }
   }
 
+  &--form-contact {
+    line-height: 20px;
+
+    @media (min-width: $vp-768) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
   &--big {
     font-size: 20px;
     line-height: 23px;
+  }
+
+  &--small-form {
+    @media (max-width: ($vp-768 - 1px)) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   &--small {

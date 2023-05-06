@@ -6,33 +6,44 @@
   padding-left: $distance-28;
   padding-right: $distance-28;
 
-  &--contact {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   @media (min-width: $vp-768) {
     padding-left: $distance-94;
     padding-right: $distance-94;
 
-    &--contact-text {
+    &--contact {
       padding-left: $distance-94 + 86px;
       padding-right: $distance-94 + 86px;
     }
+
+    &--intro {
+      padding-left: calc($distance-94 + 15.3%);
+      padding-right: $distance-94 - 45px;
+    }
   }
 
-  @media (min-width: $vp-1024) {
-    padding-left: $distance-10-8per;
-    padding-right: $distance-10-8per;
-
-    &--contact-text {
-      padding-left: 0;
-      padding-right: 0;
-    }
+  @media (min-width: $vp-1280) {
+    padding-left: $distance-155;
+    padding-right: $distance-155;
 
     &--contact {
-      padding-left: $distance-10-8per;
-      padding-right: $distance-10-8per;
+      padding-left: $distance-155;
+      padding-right: $distance-155;
+    }
+
+    &--intro {
+      padding-left: calc($distance-94 + 445px);
+    }
+  }
+
+  &--form {
+    @media (min-width: $vp-768) {
+      padding-left: $distance-94 - 19px;
+      padding-right: $distance-94 - 19px;
+    }
+
+    @media (min-width: $vp-1280) {
+      padding-left: $distance-155 + 194px;
+      padding-right: $distance-155 + 113px;
     }
   }
 }

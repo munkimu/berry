@@ -1,10 +1,10 @@
 .navigation {
-  background-color: #F1F6FC;
+  background-color: $color-alice-blue--dark;
   position: relative;
   z-index: 2;
 
   @media (min-width: $vp-768) {
-    box-shadow: 0px 4px 4px transparentize(#580D65, 0.75);
+    box-shadow: 0 4px 4px transparentize($color-hot-purple, 0.75);
   }
 }
 
@@ -17,22 +17,22 @@
     max-width: $max-width;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1280) {
     margin: 0 auto;
-    padding: 23px 13.3% 26px 10.8%;
+    padding: 23px 192px 26px 157px;
   }
 }
 
 .navigation__link {
   text-decoration: none;
-  color: #000000;
+  color: $color-black;
 
   &:hover {
-    color: #7BDB0A;
+    color: $color-lawn-green;
   }
 
   &:active {
-    color: #0F805D;
+    color: $color-deep-sea;
   }
 }
 
@@ -45,7 +45,7 @@
   gap: 29px;
   position: absolute;
   z-index: 2;
-  background-color: #F1F6FC;
+  background-color: $color-alice-blue--dark;
   width: 100%;
 
   &--visible {
@@ -64,14 +64,14 @@
     gap: 16px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1280) {
     gap: 28px;
   }
 }
 
 .navigation__logo-wrapper {
   padding: 8px 26px 2px 26px;
-  box-shadow: 0px 4px 4px transparentize(#580D65, 0.75);
+  box-shadow: 0 4px 4px transparentize($color-hot-purple, 0.75);
   position: relative;
   z-index: 3;
 
@@ -86,10 +86,10 @@
   right: 21px;
   top: 4px;
   cursor: pointer;
-  z-index: 1;
   border: 0;
   background-color: transparent;
   z-index: 4;
+  outline: 0;
 
   &::before,
   &--is-open::before {
@@ -102,7 +102,8 @@
   &::before {
     width: 60px;
     height: 60px;
-    background-image: url("/img/icons/stack.svg#burger");
+    mask: url("/../img/icons/stack.svg#burger");
+    background-color: $color-deep-sea;
   }
 
   &--is-open::before {
@@ -111,15 +112,17 @@
     position: absolute;
     width: 28px;
     height: 28px;
-    background-image: url("/img/icons/stack.svg#close");
+    mask: url("/../img/icons/stack.svg#close");
+    background-color: $color-deep-sea;
   }
 
-  &:hover {
-    opacity: 0.6;
+  &:hover::before,
+  &:focus::before {
+    background-color: $color-lawn-green;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:active::before {
+    background-color: transparentize($color-deep-sea, 0.5);
   }
 
   @media (min-width: $vp-768) {
@@ -137,12 +140,11 @@
 }
 
 .navigation__item {
-
   @media (min-width: $vp-768) {
     min-width: 112px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1280) {
     min-width: 132px;
   }
 }

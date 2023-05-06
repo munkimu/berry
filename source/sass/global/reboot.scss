@@ -1,4 +1,4 @@
-.page__body {
+body {
   min-width: $vp-320;
   font-family: $ff-raleway;
   font-weight: 400;
@@ -6,7 +6,7 @@
   color: $color-black;
   font-size: $fs-default;
   line-height: $lh-default;
-  background-color: $color-white;
+  background-color: $color-alice-blue;
 }
 
 * {
@@ -22,5 +22,8 @@
 
 img {
   max-width: 100%;
-  display: inline-block;
+}
+
+a {
+  text-decoration: none;
 }

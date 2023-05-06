@@ -1,13 +1,13 @@
 /* BreakPoints */
 $vp-320:                  320px;
 $vp-768:                  768px;
-$vp-1024:                 1024px;
+$vp-1280:                 1280px;
 
 
 /* Margin to content */
 $distance-28:             28px;
 $distance-94:             94px;
-$distance-10-8per:          10.8%;
+$distance-155:            155px;
 
 
 /* Content max-width */
@@ -15,8 +15,8 @@ $max-width:               1440px;
 
 
 /* Fonts */
-$ff-raleway:             "raleway", "Arial", serif;
-$ff-comfortaa:           "comfortaa", "Comic Sans MS", serif;
+$ff-raleway:             "raleway", "Arial", sans-serif;
+$ff-comfortaa:           "comfortaa", "Arial", sans-serif;
 
 
 /* Text */
@@ -26,5 +26,13 @@ $lh-default:              23px;
 
 /* Colors */
 
-$color-black:            #000000;
-$color-white:            #ffffff;
+$color-black:             #000000;
+$color-alice-blue:        #fbfcfe;
+$color-alice-blue--dark:  #f1f6fc;
+$color-edward:            #8e9892;
+$color-hot-purple:        #580d65;
+$color-purple:            #6a107a;
+$color-dark-orchid:       #b22ec8;
+$color-deep-sea:          #0f805d;
+$color-lawn-green:        #7bdb0a;
+$color-light-coral:       #ff8282;

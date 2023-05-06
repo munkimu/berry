@@ -3,6 +3,12 @@
 
   "rules": {
     "declaration-no-important": true,
-    "indentation": [2, {"ignore": ["inside-parens"]}]
+    "indentation": [2, {"ignore": ["inside-parens"]}],
+    "color-no-invalid-hex" : true,
+    "function-no-unknown": [true, {
+      "ignoreFunctions": [
+        "transparentize"
+      ]
+    }]
   }
 }

@@ -1,6 +1,6 @@
 .intro {
   background-image: url("/../img/content/main-mobile.jpg");
-  background-color: transparentize(#8E9892, 0.7);
+  background-color: $color-alice-blue--dark;
   background-size: cover;
   background-position: bottom 0 left 0;
   padding-bottom: 192px;
@@ -14,36 +14,34 @@
   @media (min-width: $vp-768) {
     background-image: url("/../img/content/main-tablet.jpg");
     min-height: 924px;
-    padding: 143px 49px 60px 212px;
+    padding-top: 143px;
+    padding-bottom: 60px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/../img/content/main-tablet@2x.jpg");
     }
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1280) {
     position: relative;
     background-image: none;
-    background-color: #FBFCFE;
     min-height: 800px;
-    padding: 173px calc(10.8% + 147px) 60px calc(10.8% + 382px);
+    padding-top: 173px;
 
     &::before {
       content: "";
       position: absolute;
       background-image: url("/../img/content/main-desktop.jpg");
-      background-position-y: bottom;
+      background-position-y: center;
       background-size: cover;
-      top: 0;
-      left: calc((100% - 100vw) / 2);
-      width: 100vw;
       height: 100%;
-      z-index: 0;
+      width: 100vw;
+      top: 0;
+      left: calc(50% - 50vw);
 
       @media (min-resolution: 2dppx) {
         background-image: url("/../img/content/main-desktop@2x.jpg");
       }
-
     }
   }
 }
@@ -53,13 +51,13 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 49px;
+    text-align: left;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1280) {
     position: relative;
     z-index: 2;
     margin-bottom: 53px;
-    text-align: left;
   }
 }
 
@@ -74,10 +72,12 @@
     gap: 24px;
     margin-left: 0;
   }
-  @media (min-width: $vp-1024){
+
+  @media (min-width: $vp-1280) {
     gap: 26px;
     margin-left: 26px;
     margin-bottom: 56px;
+    max-width: 545px;
   }
 }
 
@@ -87,31 +87,31 @@
   display: flex;
   align-items: center;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     left: -32px - 12px;
-    background-color: #0F805D;
+    background-color: $color-deep-sea;
     width: 32px;
     height: 32px;
   }
 
-  &--leaf:before {
-    mask: url(/../img/icons/stack.svg#leaf);
+  &--leaf::before {
+    mask: url("/../img/icons/stack.svg#leaf");
   }
 
-  &--ice:before {
-    mask: url(/../img/icons/stack.svg#ice);
+  &--ice::before {
+    mask: url("/../img/icons/stack.svg#ice");
     margin-top: 8px;
   }
 
-  &--delivery:before {
-    mask: url(/../img/icons/stack.svg#delivery);
+  &--delivery::before {
+    mask: url("/../img/icons/stack.svg#delivery");
     margin-top: 8px;
   }
 
   @media (min-width: $vp-768) {
-    &:before {
+    &::before {
       margin-top: 3px;
     }
   }
@@ -124,7 +124,7 @@
     width: auto;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1280) {
     margin-left: 38px;
   }
 }

@@ -6,7 +6,7 @@
     margin-bottom: 100px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1280) {
     display: grid;
     grid-template-columns: calc(50% - 10px) 1fr;
     padding-top: 142px;
@@ -24,7 +24,7 @@
     margin-bottom: 22px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1280) {
     margin-left: 93px;
   }
 }
@@ -42,7 +42,7 @@
     margin-bottom: 40px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1280) {
     margin-left: 93px;
   }
 }
@@ -55,42 +55,41 @@
 }
 
 .contact__link {
-  text-decoration: none;
-  color: #000000;
+  color: $color-black;
 
   &:hover {
-    color: #7BDB0A;
+    color: $color-lawn-green;
 
-    &>.contact__icon {
-      background-color: #7BDB0A;
+    & > .contact__icon {
+      background-color: $color-lawn-green;
     }
   }
 
   &:active {
-    color: #0F805D;
+    color: $color-deep-sea;
 
-    &>.contact__icon {
-      background-color: #0F805D;
+    & > .contact__icon {
+      background-color: $color-deep-sea;
     }
   }
 }
 
 .contact__icon {
-  background-color: #000000;
+  background-color: $color-black;
   height: 32px;
   width: 32px;
 
   &--address {
-    mask: url(/../img/icons/stack.svg#contact-address);
+    mask: url("/../img/icons/stack.svg#contact-address");
     margin-top: -2px;
   }
 
   &--phone {
-    mask: url(/../img/icons/stack.svg#contact-phone);
+    mask: url("/../img/icons/stack.svg#contact-phone");
   }
 
   &--email {
-    mask: url(/../img/icons/stack.svg#contact-email);
+    mask: url("/../img/icons/stack.svg#contact-email");
     margin-top: 2px;
 
     @media (min-width: $vp-768) {
@@ -102,12 +101,19 @@
 .contact__map {
   position: relative;
   height: 372px;
-  width: 100%;
-  background-color: #F1F6FC;
+  width: 100vw;
+  background-color: $color-alice-blue--dark;
   border-radius: 40px;
+  margin-left: 0 - $distance-28;
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-768) {
+    margin-left: 0 - $distance-94 - 86px;
+  }
+
+  @media (min-width: $vp-1280) {
+    width: 100%;
     order: -1;
+    margin-left: 0;
   }
 }
 
@@ -131,7 +137,7 @@
 }
 
 .contact__title {
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1280) {
     margin-top: 25px;
     margin-bottom: 49px;
   }

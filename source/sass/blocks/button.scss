@@ -1,26 +1,26 @@
 .button {
-  background: #6A107A;
+  background: $color-purple;
   border-radius: 40px;
   font-size: 20px;
   line-height: 23px;
   padding: 16px 20px 16px 16px;
-  color: #FBFCFE;
-  text-decoration: none;
+  color: $color-alice-blue;
   outline: none;
   border: none;
-  filter: drop-shadow(0 4px 4px transparentize(#580d65, 0.75));
+  filter: drop-shadow(0 4px 4px transparentize($color-hot-purple, 0.75));
   cursor: pointer;
   display: inline-block;
   text-align: center;
   font-family: $ff-raleway;
   letter-spacing: 0.05em;
 
-  &:hover {
-    background: #B22EC8;
+  &:hover,
+  &:focus {
+    background: $color-dark-orchid;
   }
 
   &:active {
-    background: transparentize(#6A107A, 0.4);
+    background: transparentize($color-purple, 0.4);
   }
 
   &--small {
@@ -28,7 +28,6 @@
   }
 
   &--big {
-
     @media (min-width: $vp-768) {
       font-size: 28px;
       line-height: 33px;

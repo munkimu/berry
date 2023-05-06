@@ -4,8 +4,8 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: transparentize(#8e9892, 0.3);
-    mask: url(/../img/icons/stack.svg#line-leaf);
+    background-color: transparentize($color-edward, 0.3);
+    mask: url("/../img/icons/stack.svg#line-leaf");
     height: 32px;
     width: 100%;
     left: 0;
@@ -16,7 +16,7 @@
       margin-top: -116px;
     }
 
-    @media (min-width: $vp-1024) {
+    @media (min-width: $vp-1280) {
       margin-top: -142px;
     }
   }
@@ -25,8 +25,36 @@
     &::before {
       margin-top: -118px;
 
-      @media (min-width: $vp-1024) {
+      @media (min-width: $vp-1280) {
         margin-top: 0;
+      }
+    }
+  }
+
+  &--contact-form {
+    &::before {
+      margin-top: -93px;
+
+      @media (min-width: $vp-768) {
+        margin-top: -116px;
+      }
+
+      @media (min-width: $vp-1280) {
+        margin-top: -2px;
+      }
+    }
+  }
+
+  &--form {
+    &::before {
+      margin-top: -83px;
+
+      @media (min-width: $vp-768) {
+        margin-top: -115px;
+      }
+
+      @media (min-width: $vp-1280) {
+        margin-top: -102px;
       }
     }
   }
